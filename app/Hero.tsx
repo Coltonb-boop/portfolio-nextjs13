@@ -1,5 +1,4 @@
 'use client'
-import Link from 'next/link';
 import React from 'react'
 import { Cursor, useTypewriter } from 'react-simple-typewriter'
 import BackgroundCircles from './BackgroundCircles';
@@ -32,18 +31,18 @@ function Hero({}: Props) {
         </h1>
 
         <div className='pt-5'>
-          <Link href="#about" as='/' scroll={false} >
+          <a href="#about" >
             <button className='heroButton'>About</button>
-          </Link>
-          <Link href='#experience' scroll={false} >
+          </a>
+          <a href='#experience'>
             <button className='heroButton'>Experience</button>
-          </Link>
-          <Link href='#skills' scroll={false} >
+          </a>
+          <a href='#skills'>
             <button className='heroButton'>Skills</button>
-          </Link>
-          <Link href='#projects' scroll={false} >
+          </a>
+          <a href='#projects'>
             <button className='heroButton'>Projects</button>
-          </Link>
+          </a>
         </div>
       </div>
     </div>
