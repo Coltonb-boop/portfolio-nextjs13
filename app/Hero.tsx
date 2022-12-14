@@ -32,16 +32,16 @@ function Hero({}: Props) {
         </h1>
 
         <div className='pt-5'>
-          <Link href="#about" legacyBehavior>
+          <Link href="#about" as='/' scroll={false} >
             <button className='heroButton'>About</button>
           </Link>
-          <Link href='#experience'>
+          <Link href='#experience' scroll={false} >
             <button className='heroButton'>Experience</button>
           </Link>
-          <Link href='#skills'>
+          <Link href='#skills' scroll={false} >
             <button className='heroButton'>Skills</button>
           </Link>
-          <Link href='#projects'>
+          <Link href='#projects' scroll={false} >
             <button className='heroButton'>Projects</button>
           </Link>
         </div>
