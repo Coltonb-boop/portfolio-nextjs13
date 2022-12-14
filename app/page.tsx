@@ -5,6 +5,7 @@ import About from './About';
 import Experience from './Experience';
 import Header from './Header';
 import Hero from './Hero';
+import Projects from './Projects';
 import Skills from './Skills';
 
 type Props = {}
@@ -26,12 +27,13 @@ const Home = (props: Props) => {
         <Experience />
       </section>
 
-      {/* Skills */}
       <section id='skills' className='snap-start'>
         <Skills />
       </section>
         
-      {/* Projects */}
+      <section id='projects' className='snap-start'>
+        <Projects />
+      </section>
 
       {/* Contact Me */}
     </div>
