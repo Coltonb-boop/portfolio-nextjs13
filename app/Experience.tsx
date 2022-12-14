@@ -1,4 +1,5 @@
 import React from 'react'
+import ExperienceCard from './ExperienceCard'
 
 type Props = {}
 
@@ -9,10 +10,11 @@ function Experience({}: Props) {
         Experience
       </h3>
 
-      <div>
-        {/* Experience card */}
-        {/* Experience card */}
-        {/* Experience card */}
+      <div className='w-full flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory'>
+        <ExperienceCard />
+        <ExperienceCard />
+        <ExperienceCard />
+        <ExperienceCard />
       </div>
     </div>
   )

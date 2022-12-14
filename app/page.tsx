@@ -21,7 +21,6 @@ const Home = (props: Props) => {
         <About />
       </section>
 
-      {/* Experience */}
       <section id='experience' className='snap-center'>
         <Experience />
       </section>
