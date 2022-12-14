@@ -5,6 +5,7 @@ import About from './About';
 import Experience from './Experience';
 import Header from './Header';
 import Hero from './Hero';
+import Skills from './Skills';
 
 type Props = {}
 
@@ -26,6 +27,9 @@ const Home = (props: Props) => {
       </section>
 
       {/* Skills */}
+      <section id='skills' className='snap-start'>
+        <Skills />
+      </section>
         
       {/* Projects */}
 
