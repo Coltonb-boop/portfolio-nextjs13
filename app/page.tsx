@@ -1,7 +1,6 @@
-import React from 'react'
-
 import '../styles/globals.css';
 import About from './About';
+import ContactMe from './ContactMe';
 import Experience from './Experience';
 import Header from './Header';
 import Hero from './Hero';
@@ -36,6 +35,9 @@ const Home = (props: Props) => {
       </section>
 
       {/* Contact Me */}
+      <section id='contact' className='snap-start'>
+        <ContactMe />
+      </section>
     </div>
   )
 }
