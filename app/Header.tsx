@@ -40,36 +40,33 @@ const Header = ({}: Props) => {
         />
       </motion.div>
 
-      <a href="#contact">
-        <motion.div
-          initial={{
-            x: 500,
-            opacity: 0,
-            scale: 0.5,
-          }}
-          animate={{
-            x: 0,
-            opacity: 1,
-            scale: 1,
-          }}
-          transition={{
-            duration: 1.5,
-          }}
-          className="flex flex-row items-center text-gray-300 cursor-pointer"
-        >
-          {/* <SocialIcon
+      <motion.div
+        initial={{
+          x: 500,
+          opacity: 0,
+          scale: 0.5,
+        }}
+        animate={{
+          x: 0,
+          opacity: 1,
+          scale: 1,
+        }}
+        transition={{
+          duration: 1.5,
+        }}
+        className="flex flex-row items-center text-gray-300 cursor-pointer"
+      >
+        <SocialIcon
           className="cursor-pointer"
           network="email"
+          url="#contact"
           fgColor="gray"
           bgColor="transparent"
         />
         <p className="uppercase hidden md:inline-flex text-sm text-gray-500">
           Get In Touch
-        </p> */}
-          <EnvelopeIcon className="cursor-pointer inline-flex" />
-          <p className="uppercase hidden md:inline-flex text-sm text-gray-500">Get In Touch</p>
-        </motion.div>
-      </a>
+        </p>
+      </motion.div>
     </header>
   );
 };
