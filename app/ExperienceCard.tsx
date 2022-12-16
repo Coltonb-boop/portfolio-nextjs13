@@ -17,7 +17,7 @@ function ExperienceCard({}: Props) {
         alt=''
       />
 
-      <div className='px-0 md: px-10'>
+      <div className='px-0 md:px-10'>
         <h4 className='text-4xl font-light'>CEO of Nothing</h4>
         <p className='font-bold text-2xl mt-1'>Colton</p>
         <div className='flex space-x-2 my-2'>
