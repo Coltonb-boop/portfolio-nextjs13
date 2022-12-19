@@ -2,23 +2,75 @@
 import React from "react";
 
 import { SocialIcon } from "react-social-icons";
+import { FaceSmileIcon } from "@heroicons/react/24/solid";
 import { motion } from "framer-motion";
-import Link from "next/link";
-import { EnvelopeIcon } from "@heroicons/react/24/solid";
 
 type Props = {};
 
 const Header = ({}: Props) => {
   return (
-    <header className="sticky top-0 p-5 flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center">
+    <header className="sticky top-0 p-5 flex items-center justify-between max-w-7xl mx-auto z-20 xl:items-center min-w-[640]">
       <motion.div
         initial={{
-          x: -500,
+          y: -200,
           opacity: 0,
           scale: 0.5,
         }}
         animate={{
-          x: 0,
+          y: 0,
+          opacity: 1,
+          scale: 1,
+        }}
+        transition={{
+          duration: 1.5,
+        }}
+        className=''
+      >
+        <FaceSmileIcon className="h-6 w-6 text-gray-500 " />
+      </motion.div>
+
+      <motion.div
+        initial={{
+          y: -200,
+          opacity: 0,
+          scale: 0.5,
+        }}
+        animate={{
+          y: 0,
+          opacity: 1,
+          scale: 1,
+        }}
+        transition={{
+          duration: 1.5,
+        }}
+        className=''
+      >
+        <div className=''>
+          <div className=''>
+            <a href="#about" >
+              <button className='heroButton'>About</button>
+            </a>
+            <a href='#experience'>
+              <button className='heroButton'>Experience</button>
+            </a>
+            <a href='#skills'>
+              <button className='heroButton'>Skills</button>
+            </a>
+            <a href='#projects'>
+              <button className='heroButton'>Projects</button>
+            </a>
+          </div>
+        </div>
+      </motion.div>
+      
+      <motion.div
+        initial={{
+          y: -200,
+          opacity: 0,
+          scale: 0.5,
+        }}
+        animate={{
+          y: 0,
           opacity: 1,
           scale: 1,
         }}
@@ -38,24 +90,6 @@ const Header = ({}: Props) => {
           fgColor="gray"
           bgColor="transparent"
         />
-      </motion.div>
-
-      <motion.div
-        initial={{
-          x: 500,
-          opacity: 0,
-          scale: 0.5,
-        }}
-        animate={{
-          x: 0,
-          opacity: 1,
-          scale: 1,
-        }}
-        transition={{
-          duration: 1.5,
-        }}
-        className="flex flex-row items-center text-gray-300 cursor-pointer"
-      >
         <SocialIcon
           className="cursor-pointer"
           network="email"

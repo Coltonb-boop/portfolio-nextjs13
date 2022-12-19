@@ -6,7 +6,7 @@ export default function RootLayout({
   return (
     <html>
       <head />
-      <body>
+      <body className='min-w-[640]'>
         {children}
       </body>
     </html>
