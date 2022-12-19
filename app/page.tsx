@@ -14,7 +14,7 @@ const Home = (props: Props) => {
     <div className='bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0'>
       <Header />
 
-      <section id='hero' className='snap-start'>
+      <section id='hero' className='snap-start mt-20'>
         <Hero />
       </section>
 
