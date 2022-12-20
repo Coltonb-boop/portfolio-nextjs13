@@ -11,7 +11,7 @@ type Props = {}
 
 const Home = (props: Props) => {
   return (
-    <div className='bg-[#fff] text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 min-w-[640]'>
+    <div className='bg-[#fff] text-black h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 min-w-[640]'>
       <Header />
 
       <section id='hero'>

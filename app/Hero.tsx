@@ -16,14 +16,28 @@ function Hero({}: Props) {
   });
   
   return (
-    <div className='h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden'>
-      <BackgroundCircles />
+    <div className='flex items-center justify-evenly text-center overflow-hidden bg-indigo-50 m-16 mt-0 h-[500px] rounded-md'>
+      <div className='flex flex-col items-center justify-center space-y-4 pl-10 max-w-md text-left'>
+        <div className='text-4xl font-bold'>
+          <p>Building digital </p>
+          <p className=''>products, brands </p>
+          <p className='text-purple-600'>experience</p>
+        </div>
+        <div>
+          <p>Full-stack Web Developer and Experience Curator</p>
+          <p>I favor using NextJS and React to create a modern look and feel.</p>
+        </div>
+        <button className='bg-purple-600 w-40 h-14 text-white'>
+          Contact Me
+        </button>
+      </div>
+
       <img 
-        className='relative rounded-full h-32 w-32 mx-auto object-cover'
+        className='rounded-full h-32 w-32 mx-auto object-cover mx-8'
         src='profilepic.jpg' 
         alt='' 
       />
-      <div className='z-20'>
+      {/* <div className='z-20'>
         <h2 className='text-sm uppercase text-gray-500 pb-2 tracking-[12px]'>Full Stack Developer</h2>
         <h1 className='text-5xl lg:text-6xl font-semibold px-10'>
           <span className='mr-3'>{text}</span>
@@ -44,7 +58,7 @@ function Hero({}: Props) {
             <button className='heroButton'>Projects</button>
           </a>
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }
