@@ -10,6 +10,7 @@ import Skills from './Skills';
 type Props = {}
 
 const Home = (props: Props) => {
+  
   return (
     <div className='bg-[#fff] text-black h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 min-w-[640]'>
       <Header />
@@ -38,7 +39,7 @@ const Home = (props: Props) => {
         <ContactMe />
       </section>
       
-      <a href="#hero">
+      <a href='#top'>
         <footer className='sticky bottom-5 cursor-pointer'>
           <div className='flex items-center justify-center'>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="h-10 w-10 rounded-full filter grayscale hover:grayscale-0">

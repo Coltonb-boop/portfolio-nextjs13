@@ -4,7 +4,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html>
+    <html id="top">
       <head />
       <body className='min-w-[640]'>
         {children}

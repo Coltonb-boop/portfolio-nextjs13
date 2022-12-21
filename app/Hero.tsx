@@ -16,7 +16,10 @@ function Hero({}: Props) {
   });
   
   return (
-    <div className='flex items-center justify-evenly text-center overflow-hidden bg-indigo-50 m-16 mt-0 h-[500px] rounded-md md:max-w-4xl md:mx-auto'>
+    <div className='relative flex items-center justify-evenly text-center bg-hero-pattern z-10 bg-indigo-50 m-16 mt-0 h-[500px] rounded-md md:max-w-4xl md:mx-auto'>
+      <div className='absolute bg-hero-pattern z-20 w-full h-full'>
+
+      </div>
       <div className='flex flex-col items-center justify-center space-y-8 pl-10 max-w-md text-left'>
         <div className='text-4xl font-bold'>
           <p>Building digital </p>
