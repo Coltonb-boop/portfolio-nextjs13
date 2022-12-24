@@ -4,9 +4,9 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html id="top" className="min-w-[640]">
+    <html>
       <head />
-      <body className='min-w-[640]'>
+      <body>
         {children}
       </body>
     </html>

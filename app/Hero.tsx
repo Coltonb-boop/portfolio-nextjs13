@@ -6,7 +6,7 @@ type Props = {}
 function Hero({}: Props) {
   
   return (
-    <div className='hero-background relative flex items-center justify-evenly text-center bg-hero-pattern z-10 bg-indigo-50 m-16 mt-0 h-[500px] md:rounded-md w-full md:max-w-7xl mx-auto'>
+    <div className='hero-background relative flex items-center justify-evenly text-center bg-hero-pattern z-10 bg-indigo-50 m-16 mt-0 h-[500px] md:rounded-md w-full md:max-w-5xl mx-auto'>
       <div className='flex flex-col items-center justify-center space-y-8 pl-10 max-w-md text-left'>
         <div className='text-4xl font-bold'>
           <p>Building digital </p>
