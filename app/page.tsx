@@ -34,10 +34,11 @@ const Home = (props: Props) => {
       <section id='about'>
         <About />
       </section>
-
-      <section id='experience'>
+ 
+      {/* Don't need for now */}
+      {/* <section id='experience'>
         <Experience />
-      </section>
+      </section> */}
 
       <section id='skills'>
         <Skills />
