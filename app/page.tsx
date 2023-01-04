@@ -11,19 +11,13 @@ type Props = {}
 
 const Home = (props: Props) => {
   
-  const goToTop = () => {
-    window.scrollTo({
-      top: 20,
-      behavior: 'smooth',
-    })
-  }
-  
   return (
     <>
       <div className='bg-[#fff]/95 text-black h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 min-w-[640]'>
+        <div id='top'></div>
         <Header />
         
-        <a href='#top' onClick={goToTop}>
+        <a href='#top'>
           <footer className='absolute right-10 bottom-5 cursor-pointer z-30'>
             <div className='flex items-center justify-center'>
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="h-10 w-10 bg-white/95 rounded-full hover:text-purple-700">
