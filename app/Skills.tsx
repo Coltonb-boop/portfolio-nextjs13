@@ -1,10 +1,22 @@
 "use client";
 import { motion } from "framer-motion";
 import Skill from "./Skill";
+import { 
+  SiJavascript, 
+  SiTypescript, 
+  SiNextdotjs,
+  SiTailwindcss, 
+  SiReact, 
+  SiHtml5, 
+  SiCsharp, 
+  SiPostgresql,
+  SiGithub,
+} from 'react-icons/si';
 
 type Props = {};
 
 function Skills({}: Props) {
+  
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -22,15 +34,7 @@ function Skills({}: Props) {
       </h3>
 
       <div className="grid grid-cols-4 gap-5">
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
+        <Skill icon={SiCsharp} />
       </div>
     </motion.div>
   );
