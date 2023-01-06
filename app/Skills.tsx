@@ -16,7 +16,12 @@ import {
 type Props = {};
 
 function Skills({}: Props) {
-  
+  const skills = [
+    'https://cdn2.iconfinder.com/data/icons/designer-skills/128/code-programming-javascript-software-develop-command-language-256.png',
+    'https://cdn2.iconfinder.com/data/icons/designer-skills/128/code-programming-html-markup-develop-layout-language-512.png',
+    'https://cdn2.iconfinder.com/data/icons/designer-skills/128/code-programming-css-style-develop-layout-language-256.png',
+    ''
+  ]
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -34,7 +39,7 @@ function Skills({}: Props) {
       </h3>
 
       <div className="grid grid-cols-4 gap-5">
-        <Skill icon={<SiCsharp />} />
+        <Skill url='https://cdn2.iconfinder.com/data/icons/designer-skills/128/code-programming-javascript-software-develop-command-language-256.png' />
       </div>
     </motion.div>
   );
