@@ -1,26 +1,21 @@
 "use client";
 import { motion } from "framer-motion";
 import Skill from "./Skill";
-import { 
-  SiJavascript, 
-  SiTypescript, 
-  SiNextdotjs,
-  SiTailwindcss, 
-  SiReact, 
-  SiHtml5, 
-  SiCsharp, 
-  SiPostgresql,
-  SiGithub,
-} from 'react-icons/si';
 
 type Props = {};
 
 function Skills({}: Props) {
   const skills = [
-    'https://cdn2.iconfinder.com/data/icons/designer-skills/128/code-programming-javascript-software-develop-command-language-256.png',
-    'https://cdn2.iconfinder.com/data/icons/designer-skills/128/code-programming-html-markup-develop-layout-language-512.png',
-    'https://cdn2.iconfinder.com/data/icons/designer-skills/128/code-programming-css-style-develop-layout-language-256.png',
-    ''
+    'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
+    'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg',
+    'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg',
+    'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg',
+    'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original-wordmark.svg',
+    'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original-wordmark.svg',
+    'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
+    'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg',
+    'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original-wordmark.svg',
+    'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg',
   ]
   return (
     <motion.div
@@ -39,7 +34,7 @@ function Skills({}: Props) {
       </h3>
 
       <div className="grid grid-cols-4 gap-5">
-        <Skill url='https://cdn2.iconfinder.com/data/icons/designer-skills/128/code-programming-javascript-software-develop-command-language-256.png' />
+        <Skill url='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg' />
       </div>
     </motion.div>
   );
