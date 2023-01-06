@@ -1,10 +1,11 @@
 'use client'
 import { motion } from 'framer-motion'
 import React from 'react'
-import { IconType } from 'react-icons';
+
+type IconType = JSX.Element;
 
 type Props = {
-  icon?: IconType;
+  icon: IconType;
 }
 
 function Skill({ icon }: Props) {
@@ -20,7 +21,7 @@ function Skill({ icon }: Props) {
         viewport={{ once: true }}
         className='rounded-full border border-gray-500 object-cover w-24 h-24 xl:w-32 xl:h-32 filter group-hover:grayscale transition duration-300 ease-in-out'
       >
-        {React.createElement(icon)}
+        {icon}
       </motion.div>
       <div className='absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white h-24 w-24 xl:w-32 xl:h-32 rounded-full z-0'>
         <div className='flex items-center justify-center h-full'>
