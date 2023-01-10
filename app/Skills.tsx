@@ -5,6 +5,20 @@ import Skill from "./Skill";
 type Props = {};
 
 function Skills({}: Props) {
+  // Array of all dev icons
+  const skills = [
+    'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
+    'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg',
+    'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg',
+    'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg',
+    'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original-wordmark.svg',
+    'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original-wordmark.svg',
+    'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
+    'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg',
+    'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original-wordmark.svg',
+    'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg',
+  ];
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -22,15 +36,9 @@ function Skills({}: Props) {
       </h3>
 
       <div className="grid grid-cols-4 gap-5">
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
+        {skills.map((skill, index) => {
+          return <Skill key={index} url={skill} />
+        })}
       </div>
     </motion.div>
   );

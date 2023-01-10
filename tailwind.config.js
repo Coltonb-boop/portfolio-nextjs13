@@ -6,7 +6,11 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'hero-pattern': "url('/public/old-map.png')"
+      }
+    },
   },
   plugins: [
     require('tailwind-scrollbar')
