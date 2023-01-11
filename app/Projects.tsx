@@ -3,11 +3,12 @@ import { motion } from 'framer-motion';
 import React from 'react';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel } from 'react-responsive-carousel';
+import { projects } from '../data/projectsList';
 
 type Props = {}
 
 function Projects({}: Props) {
-  const projects = [1,2,3,4,5];
+  // const projects = [1,2,3,4,5];
   
   return (
     <motion.div
@@ -16,7 +17,7 @@ function Projects({}: Props) {
       whileInView={{ opacity: 1 }}
       className='h-screen flex relative flex-col text-center justify-center items-center md:text-left xl:flex-row max-w-[800px] min-h-screen mx-auto'
     >
-      <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
+      <h3 className="uppercase tracking-[20px] text-gray-500 text-2xl pb-10">
         Projects
       </h3>
 
@@ -25,10 +26,10 @@ function Projects({}: Props) {
         <Carousel autoPlay interval={3000} infiniteLoop showThumbs={false} stopOnHover showStatus={false}>
           {projects.map((project, index) => {
             return (
-              <div key={index} className='bg-green-400 h-[500px]'>
-                <img src='' />
-                <p className='text-lg font-semibold'>My Favorite Project</p>
-                <p>{project}</p>
+              <div key={index} className='h-[530px]'>
+                <img src={project['url']} />
+                <p className='text-lg font-semibold'>{project['title']}</p>
+                <p>{project['synopsis']}</p>
               </div>
             )
           })}

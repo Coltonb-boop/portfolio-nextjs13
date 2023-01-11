@@ -33,7 +33,8 @@ function Skills({}: Props) {
 
       <div className="grid grid-cols-4 gap-5">
         {skills.map((skill, index) => {
-          return <Skill key={index} url={skill} />
+          const even = index / 4 % 2 >= 1;
+          return <Skill key={index} url={skill} even={even} />
         })}
       </div>
     </motion.div>
