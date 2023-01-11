@@ -4,11 +4,12 @@ import React from 'react'
 
 type Props = {
   url: string;
+  even: boolean;
 }
 
-function Skill({ url }: Props) {
+function Skill({ url, even }: Props) {
   return (
-    <div className='group relative flex cursor-pointer origin-center hover:rotate-[360deg] transition duration-700'>
+    <div className={`group relative flex cursor-pointer origin-center hover:rotate-[360deg] transition duration-700`}>
       <motion.img 
         initial={{
           x: true ? -100 : 100,
@@ -18,7 +19,7 @@ function Skill({ url }: Props) {
         transition={{ duration: 1 }}
         whileInView={{ opacity: 1, x:0 }}
         viewport={{ once: true }}
-        className='w-24 h-24 lg:w-32 lg:h-32 filter group-hover:grayscale transition duration-300 ease-in-out p-2 hover:translate-y-10'
+        className={`w-24 h-24 lg:w-32 lg:h-32 filter group-hover:grayscale transition duration-300 ease-in-out p-2 hover:translate-y-10`}
       />
       {/* <div className='absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white h-24 w-24 xl:w-32 xl:h-32 z-0'>
         <div className='flex items-center justify-center h-full'>
