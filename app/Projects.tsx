@@ -28,8 +28,8 @@ function Projects({}: Props) {
             return (
               <div key={index} className='h-[530px]'>
                 <img src={project['url']} />
-                <p className='text-lg font-semibold'>{project['title']}</p>
-                <p>{project['synopsis']}</p>
+                <p className='text-lg'><b>{project['title']}</b>: {project['synopsis']}</p>
+                <p><b>{project['tech']}</b></p>
               </div>
             )
           })}
