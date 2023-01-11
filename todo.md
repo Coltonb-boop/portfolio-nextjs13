@@ -3,6 +3,9 @@
 - or -
 * Clicking 'hamburger' swaps between socials and nav
 
+** About
+* Move smiley to after from before
+
 ** Skills
 * Make highlight color the same purple as on the to-top-page button
 * Skills section add highlight

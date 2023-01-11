@@ -8,11 +8,6 @@ type Props = {}
 
 function Projects({}: Props) {
   const projects = [1,2,3,4,5];
-  /* 
-  [
-    1: { 'title': ''}
-  ]
-  */
   
   return (
     <motion.div
