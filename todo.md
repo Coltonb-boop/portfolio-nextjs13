@@ -1,3 +1,7 @@
+** All
+* Go over each section in detail
+* Double check responsiveness
+
 ** Header / Nav
 * Header/nav maybe split into 2 rows when compressed
 - or -

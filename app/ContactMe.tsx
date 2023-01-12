@@ -25,7 +25,7 @@ function ContactMe({}: Props) {
         Contact
       </h3>
 
-      <div className="flex flex-col md:flex-row md:px-10 space-y-10">
+      <div className="flex flex-col md:px-10 space-y-10">
         <div className="flex flex-col space-y-10">
           <h4 className="text-4xl font-semibold text-center">
             Let's{" "}
@@ -38,61 +38,63 @@ function ContactMe({}: Props) {
           </p>
         </div>
 
-        <div className="space-y-10">
-          <div className="flex items-center space-x-5 justify-center">
-            <PhoneIcon className="text-purple-700 h-7 w-7 animate-pulse" />
-            <p className="text-2xl">+1234556789</p>
-          </div>
+        <div className="flex flex-row space-x-20">
+          {/* <div className="flex flex-col space-y-10 justify-center items-center">
+            <div className="flex items-center space-x-5 justify-center">
+              <PhoneIcon className="text-purple-700 h-7 w-7 animate-pulse" />
+              <p className="text-2xl">+1234556789</p>
+            </div>
 
-          <div className="flex items-center space-x-5 justify-center">
-            <EnvelopeIcon className="text-purple-700 h-7 w-7 animate-pulse" />
-            <p className="text-2xl">myemail@gmail.com</p>
-          </div>
+            <div className="flex items-center space-x-5 justify-center">
+              <EnvelopeIcon className="text-purple-700 h-7 w-7 animate-pulse" />
+              <p className="text-2xl">myemail@gmail.com</p>
+            </div>
 
-          <div className="flex items-center space-x-5 justify-center">
-            <MapPinIcon className="text-purple-700 h-7 w-7 animate-pulse" />
-            <p className="text-2xl">123 Developer Lane</p>
-          </div>
-        </div>
+            <div className="flex items-center space-x-5 justify-center">
+              <MapPinIcon className="text-purple-700 h-7 w-7 animate-pulse" />
+              <p className="text-2xl">123 Developer Lane</p>
+            </div>
+          </div> */}
 
-        <form
-          onSubmit={handleSubmit(onSubmit)}
-          className="flex flex-col w-fit mx-auto space-y-2"
-        >
-          <div className="flex space-x-2">
+          <form
+            onSubmit={handleSubmit(onSubmit)}
+            className="flex flex-col w-fit mx-auto space-y-2"
+          >
+            <div className="flex space-x-2">
+              <input
+                {...register("name")}
+                placeholder="Name"
+                className="contactInput"
+                type="text"
+              />
+              <input
+                {...register("email")}
+                placeholder="Email"
+                className="contactInput"
+                type="email"
+              />
+            </div>
+
             <input
-              {...register("name")}
-              placeholder="Name"
+              {...register("subject")}
+              placeholder="Subject"
               className="contactInput"
               type="text"
             />
-            <input
-              {...register("email")}
-              placeholder="Email"
-              className="contactInput"
-              type="email"
+
+            <textarea
+              {...register("message")}
+              placeholder="Message"
+              className="contactInput resize-none"
             />
-          </div>
-
-          <input
-            {...register("subject")}
-            placeholder="Subject"
-            className="contactInput"
-            type="text"
-          />
-
-          <textarea
-            {...register("message")}
-            placeholder="Message"
-            className="contactInput resize-none"
-          />
-          <button
-            type="submit"
-            className="bg-purple-700 hover:bg-purple-500 py-5 px-10 rounded-sm text-white font-bold"
-          >
-            Send Message
-          </button>
-        </form>
+            <button
+              type="submit"
+              className="bg-purple-700 hover:bg-purple-500 py-5 px-10 rounded-sm text-white font-bold"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
       </div>
     </div>
   );
