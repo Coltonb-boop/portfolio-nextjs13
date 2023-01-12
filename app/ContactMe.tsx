@@ -20,18 +20,23 @@ function ContactMe({}: Props) {
   };
 
   return (
-    <div className="h-screen flex relative flex-col text-center md:text-left md:flex-row mx-auto justify-evenly items-center px-10 bg-[#0f1221]/90">
+    <div className="h-screen flex relative flex-col text-center text-white mx-auto justify-evenly items-center px-10 bg-[#0f1221]/90">
       <h3 className="uppercase tracking-[20px] pt-10 text-gray-500 text-2xl">
         Contact
       </h3>
 
-      <div className="flex flex-col space-y-10">
-        <h4 className="text-4xl font-semibold text-center">
-          Sentence goes here.{" "}
-          <span className="decoration-purple-700 underline">
-            There it is.
-          </span>
-        </h4>
+      <div className="flex flex-col md:flex-row md:px-10 space-y-10">
+        <div className="flex flex-col space-y-10">
+          <h4 className="text-4xl font-semibold text-center">
+            Let's{" "}
+            <span className="text-purple-700">
+              talk
+            </span>
+          </h4>
+          <p>
+            Hiiiiii
+          </p>
+        </div>
 
         <div className="space-y-10">
           <div className="flex items-center space-x-5 justify-center">
@@ -79,13 +84,13 @@ function ContactMe({}: Props) {
           <textarea
             {...register("message")}
             placeholder="Message"
-            className="contactInput"
+            className="contactInput resize-none"
           />
           <button
             type="submit"
-            className="bg-purple-700 py-5 px-10 rounded-md text-black font-bold"
+            className="bg-purple-700 hover:bg-purple-500 py-5 px-10 rounded-sm text-white font-bold"
           >
-            Submit
+            Send Message
           </button>
         </form>
       </div>
