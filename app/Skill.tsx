@@ -9,7 +9,7 @@ type Props = {
 
 function Skill({ url, even }: Props) {
   return (
-    <div className={`group relative flex cursor-pointer origin-center hover:rotate-[360deg] transition duration-700`}>
+    <div className={`group relative flex cursor-pointer origin-center hover:scale-125 transition duration-700`}>
       <motion.img 
         initial={{
           x: true ? -100 : 100,

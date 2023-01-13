@@ -1,3 +1,9 @@
+** All
+* Go over each section in detail
+* Double check responsiveness
+
+* Hero cleanup > nav finish > text and images placed > deploy
+
 ** Header / Nav
 * Header/nav maybe split into 2 rows when compressed
 - or -

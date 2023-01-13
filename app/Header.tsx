@@ -10,10 +10,10 @@ type Props = {};
 const Header = ({}: Props) => {
   return (
     <>
-      <header className="md:hidden sticky top-0 p-5 z-20 bg-white/95">
+      <header className="md:hidden p-5 z-20 bg-white/95">
         <Bars3Icon className="w-12 h-12 cursor-pointer" />
       </header>
-      <header className="hidden sticky top-0 p-5 py-2 md:flex md:flex-row items-center justify-between md:justify-evenly mx-auto z-20 bg-white/95 xl:items-center min-w-[640]">
+      <header className="hidden p-5 py-2 md:flex md:flex-row items-center justify-between md:justify-evenly mx-auto z-20 bg-white/95 xl:items-center min-w-[640]">
         <motion.div
           initial={{
             y: -200,

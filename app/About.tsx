@@ -11,7 +11,7 @@ function About({}: Props) {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className='flex flex-col relative h-screen text-center justify-evenly md:text-left px-20 mx-auto items-center bg-[#0f1221]/90'
+      className='flex flex-col relative h-screen text-center justify-evenly px-20 mx-auto items-center bg-[#0f1221]/90'
     >
       <div>
         <h3 className='uppercase font-medium text-gray-500 text-lg'>
