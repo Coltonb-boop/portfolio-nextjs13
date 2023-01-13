@@ -1,6 +1,5 @@
 'use client'
 import React from "react";
-import { PhoneIcon, MapPinIcon, EnvelopeIcon } from "@heroicons/react/24/solid";
 import { useForm, SubmitHandler } from "react-hook-form";
 
 type Inputs = {
@@ -33,8 +32,8 @@ function ContactMe({}: Props) {
               talk
             </span>
           </h4>
-          <p>
-            Hiiiiii
+          <p className="max-w-[400px] mx-auto">
+            If you want to get in touch or meet up for coffee, fill out the form and I will get back to you soon.
           </p>
         </div>
 
