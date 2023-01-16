@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 
 import { SocialIcon } from "react-social-icons";
 import { FaceSmileIcon, Bars3Icon } from "@heroicons/react/24/solid";
@@ -8,10 +8,16 @@ import { motion } from "framer-motion";
 type Props = {};
 
 const Header = ({}: Props) => {
+  const [headerState, setHeaderState] = useState('');
+  
+  const navClickHandler = () => {
+    
+  }
+  
   return (
     <>
       <header className="md:hidden p-5 z-20 bg-white/95">
-        <Bars3Icon className="w-12 h-12 cursor-pointer" />
+        <Bars3Icon onClick={navClickHandler} className="w-12 h-12 cursor-pointer" />
       </header>
       <header className="hidden p-5 py-2 md:flex md:flex-row items-center justify-between md:justify-evenly mx-auto z-20 bg-white/95 xl:items-center min-w-[640]">
         <motion.div
