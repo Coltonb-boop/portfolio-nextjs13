@@ -25,7 +25,7 @@ const Header = ({}: Props) => {
       duration: 0.5,
     }}
   >
-    <div className=''>
+    <div className='font-medium'>
       <a href="#about" >
         <button className='heroButton'>About</button>
       </a>
@@ -37,7 +37,7 @@ const Header = ({}: Props) => {
       </a>
     </div>
   </motion.div>
-  
+
   const socialLinks = <motion.div
     initial={{
       y: -20,
@@ -83,7 +83,12 @@ const Header = ({}: Props) => {
   
   return (
     <>
-      <header className="flex justify-between md:hidden p-5 z-20 bg-white/95">
+      {/* <header className="flex justify-between items-center md:hidden p-5 py-2 z-20 bg-white/95">
+        <div className="hidden sm:flex">
+          <FaceSmileIcon className="h-6 w-6 text-gray-500 " />
+        </div>
+        {innerLinks}
+        {socialLinks}
         <Bars3Icon onClick={navClickHandler} className="w-12 h-12 cursor-pointer" />
         {
           headerState 
@@ -91,9 +96,9 @@ const Header = ({}: Props) => {
           innerLinks
           :
           socialLinks
-        }
-      </header>
-      <header className="hidden p-5 py-2 md:flex md:flex-row items-center justify-between md:justify-evenly mx-auto z-20 bg-white/95 xl:items-center min-w-[640]">
+        } 
+      </header> */}
+      <header className="p-5 py-2 flex flex-row items-center justify-between md:justify-evenly mx-auto z-20 bg-white/95 xl:items-center min-w-[640]">
         <motion.div
           initial={{
             y: -200,
@@ -108,51 +113,14 @@ const Header = ({}: Props) => {
           transition={{
             duration: 0.5,
           }}
-          className=''
+          className='hidden sm:flex'
         >
           <FaceSmileIcon className="h-6 w-6 text-gray-500 " />
         </motion.div>
 
         {innerLinks}
         
-        <motion.div
-          initial={{
-            y: -200,
-            opacity: 0,
-            scale: 0.5,
-          }}
-          animate={{
-            y: 0,
-            opacity: 1,
-            scale: 1,
-          }}
-          transition={{
-            duration: 1.5,
-          }}
-          className="flex flex-row items-center"
-        >
-          {/* Social icons */}
-          <SocialIcon
-            url="https://github.com/Coltonb-boop"
-            fgColor="gray"
-            bgColor="transparent"
-          />
-          <SocialIcon
-            url="https://www.linkedin.com/in/colton-bitz-491aa157/"
-            fgColor="gray"
-            bgColor="transparent"
-          />
-          <SocialIcon
-            className="cursor-pointer"
-            network="email"
-            url="#contact"
-            fgColor="gray"
-            bgColor="transparent"
-          />
-          <p className="uppercase hidden md:inline-flex text-sm text-gray-500">
-            Get In Touch
-          </p>
-        </motion.div>
+        {socialLinks}
       </header>
     </>
   );
