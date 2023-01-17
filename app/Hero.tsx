@@ -17,9 +17,9 @@ function Hero({}: Props) {
           <p>Full-stack Web Developer and Experience Curator</p>
           <p>Focusing on NextJS and React to create modern, fast web apps.</p>
         </div>
-        <button className='bg-purple-700 hover:bg-purple-500 w-40 h-14 text-white'>
+        <a href='#contact' className='flex items-center justify-center bg-purple-700 hover:bg-purple-500 w-40 h-14 text-white'>
           Contact Me
-        </button>
+        </a>
       </div>
 
       <img 
