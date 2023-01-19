@@ -11,6 +11,7 @@ function About({}: Props) {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
+      viewport={{ once: true }}
       className='flex flex-col relative h-screen text-center justify-evenly px-20 mx-auto items-center bg-[#0f1221]/90'
     >
       <div className='-mt-10'>
@@ -39,7 +40,7 @@ function About({}: Props) {
 
         <div className='space-y-10 px-0 md:px-10 text-white'>
           <p className='text-md'>
-            I'm a pilot and full-stack web developer with a passion for creating simple and elegant web apps. In my free time, you can find me either wall-climbing or playing games with my friends. 
+            I'm a pilot and full-stack web developer with a passion for creating simple and elegant web apps. In my free time, you can find me either wall-climbing or playing games with my friends. I love gamification and try my best to utilize it in everything I make.
           </p>
           <p>
             My goal with web app development is to create immersive experiences that allow the user to do exactly what they want with the least amount of effort.
