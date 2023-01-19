@@ -39,10 +39,10 @@ function About({}: Props) {
 
         <div className='space-y-10 px-0 md:px-10 text-white'>
           <p className='text-md'>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+            I'm a pilot and full-stack web developer with a passion for creating simple and elegant web apps. In my free time, you can find me either wall-climbing or playing games with my friends. 
           </p>
           <p>
-          It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            My goal with web app development is to create immersive experiences that allow the user to do exactly what they want with the least amount of effort.
           </p>
         </div>
       </div>

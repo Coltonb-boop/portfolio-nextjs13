@@ -2,7 +2,7 @@
 * Go over each section in detail
 * Double check responsiveness
 
-* text and images placed > play with motion(see below) > deploy
+* text and images placed > Add github links to projects > play with motion(see below) > deploy
 
 ** Motion
 * Goal is to have most things transitions to their spot from a -y and translucent, once it's in place, don't show again

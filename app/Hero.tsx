@@ -23,7 +23,7 @@ function Hero({}: Props) {
       </div>
 
       <img 
-        className='rounded-full h-32 w-32 md:w-48 md:h-48 mx-auto object-cover'
+        className='rounded-full h-32 w-32 md:w-48 md:h-48 lg:w-64 lg:h-64 mx-auto object-cover'
         src='profilepic.jpg' 
         alt='' 
       />
