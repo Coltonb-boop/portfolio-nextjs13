@@ -20,7 +20,7 @@ function ContactMe({}: Props) {
 
   return (
     <div className="h-screen flex relative flex-col text-center text-white mx-auto justify-evenly items-center px-10 bg-[#0f1221]/90">
-      <h3 className="uppercase tracking-[20px] pt-10 text-gray-500 text-2xl">
+      <h3 className="uppercase tracking-[20px] text-gray-500 text-2xl">
         Contact
       </h3>
 
@@ -33,7 +33,7 @@ function ContactMe({}: Props) {
             </span>
           </h4>
           <p className="max-w-[400px] mx-auto">
-            If you want to get in touch or meet up for coffee, fill out the form and I will get back to you soon.
+            If you want to get in touch, meet up for coffee or just say hi, drop an email below and I will get back to you soon.
           </p>
         </div>
 
