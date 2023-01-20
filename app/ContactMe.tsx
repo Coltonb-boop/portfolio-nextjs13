@@ -29,7 +29,18 @@ function ContactMe({}: Props) {
   
   const onSubmit = (e) => {
     e.preventDefault();
-
+    send(
+      '',
+      '',
+      toSend,
+      '',
+    )
+    .then((res) => {
+      console.log('Success!', res.status, res.text);
+    })
+    .catch((err) => {
+      console.log('Failed...', err);
+    })
   };
 
   const handleChange = (e) => {
