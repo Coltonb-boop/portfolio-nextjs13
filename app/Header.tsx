@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 
 import { SocialIcon } from "react-social-icons";
-import { FaceSmileIcon, Bars3Icon } from "@heroicons/react/24/solid";
+import { FaceSmileIcon } from "@heroicons/react/24/solid";
 import { motion } from "framer-motion";
 
 type Props = {};

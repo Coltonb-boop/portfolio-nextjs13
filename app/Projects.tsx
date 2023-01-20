@@ -4,11 +4,11 @@ import React from 'react';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel } from 'react-responsive-carousel';
 import { projects } from '../data/projectsList';
+import { SocialIcon } from 'react-social-icons';
 
 type Props = {}
 
 function Projects({}: Props) {
-  // const projects = [1,2,3,4,5];
   
   return (
     <motion.div
@@ -27,10 +27,15 @@ function Projects({}: Props) {
         <Carousel autoPlay interval={3000} infiniteLoop showThumbs={false} stopOnHover showStatus={false} showIndicators={false}>
           {projects.map((project, index) => {
             return (
-              <div key={index} className='h-[530px]'>
-                <img src={project['url']} />
+              <div key={index} className='h-[630px]'>
+                <img src={project['imageUrl']} />
                 <p className='text-lg'><b>{project['title']}</b>: {project['synopsis']}</p>
                 <p><b>{project['tech']}</b></p>
+                <SocialIcon
+                  url={project['githubUrl']}
+                  fgColor="gray"
+                  bgColor="transparent"
+                />
               </div>
             )
           })}
