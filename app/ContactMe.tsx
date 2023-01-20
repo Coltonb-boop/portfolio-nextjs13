@@ -1,8 +1,16 @@
 'use client'
-import React from "react";
+import React, { useState } from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
+import { send } from 'emailjs-com';
 
 type Inputs = {
+  name: string;
+  email: string;
+  subject: string;
+  message: string;
+};
+
+type ContactInputs = {
   name: string;
   email: string;
   subject: string;
@@ -12,11 +20,27 @@ type Inputs = {
 type Props = {};
 
 function ContactMe({}: Props) {
-  const { register, handleSubmit } = useForm<Inputs>();
+  const [toSend, setToSend] = useState({
+    from_name: '',
+    to_name: '',
+    message: '',
+    reply_to: '',
+  });
+  
+  const onSubmit = (e) => {
+    e.preventDefault();
 
-  const onSubmit: SubmitHandler<Inputs> = (formData) => {
-    window.location.href = `mailto:coltonbport@gmail.com?subject=${formData.subject}&body=Hi, my name is ${formData.name}. ${formData.message}`  
   };
+
+  const handleChange = (e) => {
+    setToSend({ ...toSend, [e.target.name]: e.target.value});
+  };
+  
+  // const { register, handleSubmit } = useForm<Inputs>();
+
+  // const onSubmit: SubmitHandler<Inputs> = (formData) => {
+  //   window.location.href = `mailto:coltonbport@gmail.com?subject=${formData.subject}&body=Hi, my name is ${formData.name}. ${formData.message}`  
+  // };
 
   return (
     <div className="h-screen flex relative flex-col text-center text-white mx-auto justify-evenly items-center px-10 bg-[#0f1221]/90">
@@ -37,24 +61,39 @@ function ContactMe({}: Props) {
           </p>
         </div>
 
-        <div className="flex flex-row space-x-20">
-          {/* <div className="flex flex-col space-y-10 justify-center items-center">
-            <div className="flex items-center space-x-5 justify-center">
-              <PhoneIcon className="text-purple-700 h-7 w-7 animate-pulse" />
-              <p className="text-2xl">+1234556789</p>
-            </div>
+        <form onSubmit={onSubmit}>
+          <input
+            type='text'
+            name='from_name'
+            placeholder="from name"
+            value={toSend.from_name}
+            onChange={handleChange}
+          />
+          <input
+            type='text'
+            name='to_name'
+            placeholder="to name"
+            value={toSend.to_name}
+            onChange={handleChange}
+          />
+          <input
+            type='text'
+            name='message'
+            placeholder="Your message"
+            value={toSend.message}
+            onChange={handleChange}
+          />
+          <input
+            type='text'
+            name='reply_to'
+            placeholder="Your email"
+            value={toSend.reply_to}
+            onChange={handleChange}
+          />
+          <button type="submit">Submit</button>
+        </form>
 
-            <div className="flex items-center space-x-5 justify-center">
-              <EnvelopeIcon className="text-purple-700 h-7 w-7 animate-pulse" />
-              <p className="text-2xl">myemail@gmail.com</p>
-            </div>
-
-            <div className="flex items-center space-x-5 justify-center">
-              <MapPinIcon className="text-purple-700 h-7 w-7 animate-pulse" />
-              <p className="text-2xl">123 Developer Lane</p>
-            </div>
-          </div> */}
-
+        {/* <div className="flex flex-row space-x-20">
           <form
             onSubmit={handleSubmit(onSubmit)}
             className="flex flex-col w-fit mx-auto space-y-2"
@@ -93,7 +132,7 @@ function ContactMe({}: Props) {
               Send Message
             </button>
           </form>
-        </div>
+        </div> */}
       </div>
     </div>
   );
