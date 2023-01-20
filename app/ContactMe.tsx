@@ -26,8 +26,10 @@ function ContactMe({}: Props) {
     message: '',
     reply_to: '',
   });
+  const [sending, setSending] = useState(false);
+  const popup = (<div className={`flex absolute justify-center items-center bg-white w-40 h-24 rounded-md text-black font-medium transition duration-500 translate-y-48`}><p>Email sent!</p></div>)
   
-  const onSubmit = (e) => {
+  const onSubmit = (e: any) => {
     e.preventDefault();
     send(
       'default_service',
@@ -37,24 +39,30 @@ function ContactMe({}: Props) {
     )
     .then((res) => {
       console.log('Success!', res.status, res.text);
+      setSending(true);
       setToSend({
         from_name: '',
         to_name: 'Colton',
         message: '',
         reply_to: '',
-      })
+      });
+      setTimeout(() => {
+        setSending(false);
+      }, 3000);
     })
     .catch((err) => {
       console.log('Failed...', err);
     })
   };
 
-  const handleChange = (e) => {
+  const handleChange = (e: any) => {
     setToSend({ ...toSend, [e.target.name]: e.target.value});
   };
 
   return (
-    <div className="h-screen flex relative flex-col text-center text-black mx-auto justify-evenly items-center px-10 bg-[#0f1221]/90">
+    <div className="h-screen flex relative flex-col text-center text-white/80 mx-auto justify-evenly items-center px-10 bg-[#0f1221]/90">
+      {sending ? popup : ''}
+      
       <h3 className="uppercase tracking-[20px] text-gray-500 text-2xl">
         Contact
       </h3>
