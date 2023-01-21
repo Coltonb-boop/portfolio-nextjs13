@@ -4,7 +4,7 @@
 
 @layer components {
   .heroButton {
-    @apply px-6 py-2 text-black hover:text-purple-700
+    @apply px-2 sm:px-6 py-2 text-black hover:text-purple-700
   }
 
   .contactInput {
