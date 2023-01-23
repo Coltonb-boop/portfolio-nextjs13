@@ -24,7 +24,7 @@ function Projects({}: Props) {
 
       {/* React Carousel */}
       <div className='w-full'>
-        <Carousel autoPlay interval={3000} infiniteLoop showThumbs={false} stopOnHover showStatus={false} showIndicators={false}>
+        <Carousel autoPlay interval={3000} infiniteLoop showThumbs={false} stopOnHover showStatus={false} showIndicators={false} swipeable={false}>
           {projects.map((project, index) => {
             return (
               <div key={index} className='h-[630px]'>

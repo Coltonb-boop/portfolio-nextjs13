@@ -36,7 +36,7 @@ function About({}: Props) {
             }}
             viewport={{ once: true }}
             src='profilepic.jpg'
-            className='flex-shrink-0 w-56 h-56 rounded-full object-cover mb-20 md:mb-0 md:rounded-lg md:w-64 md:h-96 xl:w-[500px] xl:h-[500px]'
+            className='flex-shrink-0 w-56 h-56 rounded-full object-cover mt-10 mb-14 md:mb-0 md:rounded-lg md:w-64 md:h-96 xl:w-[500px] xl:h-[500px]'
           />
 
           <div className='space-y-10 px-0 md:px-10 text-white'>
