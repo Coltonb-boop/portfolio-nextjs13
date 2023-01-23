@@ -60,15 +60,15 @@ function ContactMe({}: Props) {
   };
 
   return (
-    <div className="h-screen flex relative flex-col text-center text-white/80 mx-auto justify-evenly items-center px-10 bg-[#0f1221]/90">
+    <div className="h-screen w-screen flex relative flex-col text-center text-white/80 mx-auto justify-evenly items-center px-10 bg-[#0f1221]/90">
       {sending ? popup : ''}
       
       <h3 className="uppercase tracking-[20px] text-gray-500 text-2xl">
         Contact
       </h3>
 
-      <div className="flex flex-col md:px-10 space-y-10">
-        <div className="flex flex-col space-y-10">
+      <div className="flex flex-col md:px-10 space-y-24 w-full">
+        <div className="flex flex-col space-y-16">
           <h4 className="text-4xl font-semibold text-center">
             Let's{" "}
             <span className="text-purple-700">
@@ -85,14 +85,14 @@ function ContactMe({}: Props) {
             onSubmit={onSubmit}
             className="flex flex-col w-fit mx-auto space-y-2"
           >
-            <div className="flex space-x-2">
+            <div className="flex space-x-2 max-w-xs sm:max-w-full">
               <input
                 type='text'
                 name='from_name'
                 placeholder="Your name"
                 value={toSend.from_name}
                 onChange={handleChange}
-                className="contactInput"
+                className="contactInput max-w-[48.7%] sm:max-w-full"
               />
               <input
                 type='text'
@@ -100,7 +100,7 @@ function ContactMe({}: Props) {
                 placeholder="Your email"
                 value={toSend.reply_to}
                 onChange={handleChange}
-                className="contactInput"
+                className="contactInput max-w-[48.7%] sm:max-w-full"
               />
             </div>
 
