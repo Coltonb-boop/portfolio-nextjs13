@@ -11,19 +11,19 @@ import Skills from './Skills';
 type Props = {}
 
 const Home = (props: Props) => {
-  const [showButton, setShowButton] = useState<boolean>(false);
+  // const [showButton, setShowButton] = useState<boolean>(false);
   
-  const toggleVisible = () => {
-    const scrolled = document.documentElement.scrollTop;
-    if (scrolled > 300) {
-      setShowButton(true);
-    }
-    else if (scrolled <= 300) {
-      setShowButton(false);
-    }
-  };
+  // const toggleVisible = () => {
+  //   const scrolled = document.documentElement.scrollTop;
+  //   if (scrolled > 300) {
+  //     setShowButton(true);
+  //   }
+  //   else if (scrolled <= 300) {
+  //     setShowButton(false);
+  //   }
+  // };
 
-  window.addEventListener('scroll', toggleVisible);
+  // window.addEventListener('scroll', toggleVisible);
   
   return (
     <>
