@@ -31,7 +31,7 @@ function Skills({}: Props) {
         Skills
       </h3>
 
-      <div className="grid grid-cols-4 gap-5">
+      <div className="grid grid-cols-4 gap-5 mb-20">
         {skills.map((skill, index) => {
           const even = index / 4 % 2 >= 1;
           return <Skill key={index} url={skill} even={even} />
