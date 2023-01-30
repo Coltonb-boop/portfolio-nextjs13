@@ -11,7 +11,7 @@ function About({}: Props) {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      viewport={{ once: true }}
+      viewport={{ once: false }}
       className='bg-[#0f1221]/90'
     >
       <div className='flex flex-col relative h-screen text-center justify-evenly px-20 mx-auto items-center max-w-6xl'>
