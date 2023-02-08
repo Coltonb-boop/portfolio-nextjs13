@@ -27,7 +27,7 @@ const Home = (props: Props) => {
   
   return (
     <>
-      <div className='bg-[#fff]/95 text-black h-screen overflow-y-scroll overflow-x-hidden z-0 min-w-[640]'>
+      <div className='bg-[#fff]/95 text-black h-screen overflow-y-scroll overflow-x-hidden min-w-[640]'>
         <div id='top'></div>
         <Header />
         
